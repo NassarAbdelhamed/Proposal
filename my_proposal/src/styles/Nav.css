@@ -1,0 +1,66 @@
+/* Nav.css */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 240px;
+  padding: 10px 20px;
+  background-color: #290d1c;
+  color: #fff;
+}
+
+.links {
+  display: flex;
+  font-size: 40px;
+}
+
+.links a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.but {
+  display: none;
+}
+
+@media (max-width: 769px) {
+  .nav {
+    justify-content: end;
+    height: 60px;
+  }
+
+   .but {
+    display: block;
+  }
+
+  #close  {
+    height: 120px;
+  }
+
+  #close .links {
+    display: none;
+  }
+
+  #open  {
+    justify-items: first baseline;
+    text-align: left;
+    align-items: start;
+    height: 300px;
+    display: flex;
+    margin: 0px;
+  }
+  #open .links{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    top: 0;
+  }
+  #open .links a{
+    margin-top: 20px;
+  }
+}
